@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+.Validacion_Edad{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    display: block;
+}
+/* ||| CONTENEDOR Nombre_Empresa |||*/
+.Nombre_Empresa{
+    text-align: center;
+}
+.KalukA{
+    color: #F0D513;
+    letter-spacing: 15px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Kanit',sans-serif;
+}
+.BEER{
+    color: #FFA600;
+    letter-spacing: 30px;
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Kanit',sans-serif;
+}
+/* |||=== FIN CONTENEDOR Nombre_Empresa ===|||*/
+
+/* ||| CONTENEDOR Contenedor_Acciones |||*/
+.Contenedor_Acciones{
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fecha_nacimiento input, .fecha_nacimiento p{
+    margin: 20px;
+}
+.fecha_nacimiento p{
+    color: aliceblue;
+    font-size: 20px;
+}
+.fecha_nacimiento input{
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    margin: 0 50px;
+    background-color: black;
+    border-color: aliceblue;
+    border-width: 5px;
+    color: aliceblue;
+}
+.fecha_nacimiento .ingresar{
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin: 0 50px;
+    background-color: black;
+    border-color: aliceblue;
+    border-width: 5px;
+    color: aliceblue;
+}
+.fecha_nacimiento input::placeholder{
+    color: aliceblue;
+    text-align: center;
+}
+/* |||=== FIN CONTENEDOR Contenedor_Acciones ===|||*/
+
+/* ||| CONTENEDOR Pie_Pagina_Validacion |||*/
+.Pie_Pagina_Validacion{
+    background-color: #FFA600;
+    display: flex;
+    justify-content: space-between;
+}
+.imagen1_logo{
+    width: 150px;
+    height: 150px;
+}
+.imagen_pie_pagina, .texto1_pie_pagina,
+.texto2_pie_pagina{
+    margin: 20px;
+}

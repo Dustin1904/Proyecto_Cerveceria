@@ -3,13 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Registro DJMS </title>
+        <title> KalukA BEER Validacion </title>
         <link rel="stylesheet" type="text/css" href="Css/Estilos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
+        family=Kanit:wght@400;700&display=swap">
     </head>
     <body>
         <div class="Validacion_Edad">
-            <h1 class="Nombre_Empresa"> KalukA </h1> <br>
-            <h1 class="Nombre_Empresa"> BEER </h1> 
-        </div>
+            <div class="Nombre_Empresa">
+                <h1 class="KalukA"> KalukA </h1> <br>
+                <h1 class="BEER"> BEER </h1> <br>
+            </div>
+            <div class="Contenedor_Acciones">
+                <div class="fecha_nacimiento">
+                    <form action="Pagina_Principal.html" target="_self">
+                        <input class="dia" type="number" id="dia" min="1" max="31" placeholder="Día" required>
+                        <input class="mes" type="number" id="mes" min="1" max="12" placeholder="Mes" required>
+                        <input class="año" type="number" id="año" min="1950" max="2024" placeholder="Año" required> <br>
+                        <p class="texto_ingreso"> Ingrese su fecha de nacimiento para poder ingresar</p>
+                        <input class="ingresar" type="submit" value="Ingresar"> 
+                    </form> 
+                </div> <!-- Final div "fecha_nacimiento"--> 
+            </div> <!-- Final div "Contenedor_Acciones" -->
+            <div class="Pie_Pagina_Validacion">
+                <div class="imagen_pie_pagina">
+                    <img class="imagen1_logo" src="Imagenes/Kaluka_Beer_3.jpg" alt="" >
+                </div>
+                <div class="texto1_pie_pagina">
+                    <p class="texto_menores_edad"> Venta prohibida a menores de 18 años </p>
+                </div>
+                <div class="texto2_pie_pagina">
+                    <p class="texto_advertencia"> Advertencia: El consumo excesivo de alcohol 
+                        limita su capacidad de conducir y operar maquinarias, puede causar 
+                        daños en su salud y perjudica a su familia. Ministerio de Salud Pública
+                        del Ecuador. 
+                    </p>
+                </div>
+                 
+            </div> <!-- Final div "Pie_Pagina_Validacion" -->
+        </div><!-- Final div "Validacion_Edad" -->
     </body>
 </html>
