@@ -10,16 +10,18 @@
 /* ||| CONTENEDOR Nombre_Empresa |||*/
 .Nombre_Empresa{
     text-align: center;
+    padding: 30px;
 }
 .KalukA{
     color: #F0D513;
     letter-spacing: 15px;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 900;
     font-family: 'Kanit',sans-serif;
 }
 .BEER{
     color: #FFA600;
+    font-size: 60px;
     letter-spacing: 30px;
     position: relative;
     margin-left: 20px;
@@ -29,11 +31,12 @@
 
 /* ||| CONTENEDOR Contenedor_Acciones |||*/
 .Contenedor_Acciones{
-    background-color: aqua;
+    background-color: black;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top: -5px;
 }
 
 .fecha_nacimiento input, .fecha_nacimiento p{
@@ -42,26 +45,37 @@
 .fecha_nacimiento p{
     color: aliceblue;
     font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(252, 91, 4, 0.5)
 }
 .fecha_nacimiento input{
     border-radius: 15px;
-    width: 150px;
-    height: 50px;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
     margin: 0 50px;
     background-color: black;
     border-color: aliceblue;
     border-width: 5px;
     color: aliceblue;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+.fecha_nacimiento input:hover{
+    transform: scale(1.1);
 }
 .fecha_nacimiento .ingresar{
     border-radius: 30px;
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 75px;
     margin: 0 50px;
     background-color: black;
     border-color: aliceblue;
     border-width: 5px;
     color: aliceblue;
+    transition: transform 0.5s ease;
+}
+.fecha_nacimiento .ingresar:hover{
+    transform: scale(1.1);
 }
 .fecha_nacimiento input::placeholder{
     color: aliceblue;
@@ -71,15 +85,64 @@
 
 /* ||| CONTENEDOR Pie_Pagina_Validacion |||*/
 .Pie_Pagina_Validacion{
-    background-color: #FFA600;
+    background-color: black;
     display: flex;
     justify-content: space-between;
+    
 }
 .imagen1_logo{
     width: 150px;
     height: 150px;
 }
-.imagen_pie_pagina, .texto1_pie_pagina,
-.texto2_pie_pagina{
-    margin: 20px;
+.imagen2_tiktok,.imagen3_instagram{
+    width: 35px;
+    height: 35px;
+    padding: 50px 5px;
 }
+.imagen1_pie_pagina, .texto1_pie_pagina,
+.texto2_pie_pagina,.imagen2_tiktok_pie_pagina,
+.imagen3_instagram_pie_pagina{
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+.imagen1_pie_pagina:hover, .texto1_pie_pagina:hover,
+.texto2_pie_pagina:hover,.imagen2_tiktok_pie_pagina:hover,
+.imagen3_instagram_pie_pagina:hover{
+    transform: scale(1.1);
+}
+
+.texto_advertencia, .texto_menores_edad{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(252, 91, 4, 0.5)
+}
+.texto_advertencia{
+    padding: 50px 50px;
+}
+.texto_menores_edad{
+    padding: 50px 10px;
+}
+/*|||=== FINAL CONTENEDOR Pie_Pagina_Validacion ===|||*/
+
+/*||| MEDIA PARA AJUSTAR EL TAMAÑO DE LA PAGINA |||*/
+@media (max-width:600px) {
+    .Validacion_Edad{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contenedor_Acciones{
+        display: flex;
+        flex-direction: column;
+    }
+    .Pie_Pagina_Validacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen1_pie_pagina,.imagen2_tiktok_pie_pagina,
+    .imagen3_instagram_pie_pagina{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*|||=== FINAL DE LA MEDIA ===|||*/
