@@ -160,7 +160,7 @@
 /*|||||||||||||||||| FIN PAGINA VALIDACION ||||||||||||*/
 
 
-/* ||||||||||||||  PAGINA PRINCIPAL ||||||||||||||||||||||*/
+/* ||||||||||||||  MENU DE OPCIONES ||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
@@ -180,6 +180,10 @@
     width: 125px;
     height: 100px;
     margin-top: 5px;
+    transition: transform 0.5s ease;
+}
+.Logo_Kaluka img:hover{
+    transform: scale(1.1);
 }
 .pagina_actual{
     color: #FFA600;
@@ -210,7 +214,14 @@
     font-size: 20px;
     margin-right: 20px;
     letter-spacing: 5px;
-    text-shadow: 3px 3px 0px rgba(255, 140, 0, 0.5)
+    text-shadow: 3px 3px 0px rgba(255, 140, 0, 0.5);
+    transition: transform 0.5s ease;
+} 
+.navegacion a:hover{
+    transform: scale(2.5);
+}
+.navegacion a:hover{
+    transform: scale(1.1);
 }
 .navegacion li:last-child a{
     margin-right: 0;
@@ -224,3 +235,46 @@
 .Contenido_Pagina{
     background-color: bisque;
 }
+
+/*||| MEDIA PARA EL MENU DE OPCIONES |||*/
+@media (max-width: 800px) {
+    .Pagina_Principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contenedor_Acciones_Menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo_Kaluka{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_logo_pantallas{
+        display: flex;
+    }
+    .pagina_actual{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_opciones{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion li{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/*|||=== FIN MEDIA DEL MENU DE OPCIONES ===|||*/
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||FIN MENU DE OPCIONES||||||||||||||*/
+
