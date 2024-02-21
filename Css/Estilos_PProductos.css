@@ -51,6 +51,12 @@
 
 /*||| CONTENEDOR "Contenido_Pagina |||"*/
 
+.Contenido_Pagina{
+    margin-top: 3em;
+}
+
+
+
 .imagen_fondo{
     position: fixed;
     right: 0;
@@ -121,6 +127,12 @@
         flex-direction: column;
     }
     
+}
+
+@media screen and (max-witdh: 700px){
+    .contenedor_general_prodcutos_1{
+        flex-direction: column;
+    }
 }
 
 /*|||=== FIN MEDIA DEL MENU DE OPCIONES ===|||*/
