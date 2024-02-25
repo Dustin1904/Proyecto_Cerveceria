@@ -93,6 +93,18 @@
     justify-content: center;
 }
 
+
+/*Desaparece las flechitos del input de tipo number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+    text-align: center;
+}
+
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
 @media (max-width: 800px) {
     .Pagina_Principal{
