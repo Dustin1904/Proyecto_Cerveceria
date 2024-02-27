@@ -38,24 +38,28 @@ const productosDinamicos = () =>{
                         <div class="imagen_producto">
                             <img src="${producto.img}" alt="">
                         </div>
+                        <div class="borde"></div>
+                        
                         <div class="caracteristicas_producto">
+                            <div class="description">
+                                <p>${producto.description}
+                                </p>
+                                <div class="precio_producto">
+                                    <p> ${producto.price}</p>
+                                </div>   
+                            </div>
                             <div class="contenedor_boton_precio">
                                 <div class="boton_cantidad">
                                     <button class="disminuir" id="disminuir_${producto.id}"> - </button>
                                     <input type="number" id="numeroProducto_${producto.id}" value="1" min="1" max="50">
-                                    <button class="aumentar" id ="aumentar_${producto.id}"> + </button>
-                                </div>
-                                <div class="precio_producto">
-                                    <p> ${producto.price}</p>
+                                    <button class="aumentar" id ="aumentar_${producto.id}"> + </button>    
                                 </div>
                             </div>
-                            <div class="caracteristica_botonAgregar">
-                                <p>${producto.description}
-                                </p>
-                                <button> Agregar </button>
-                            </div>
+                            <div class="butt_add"><button> Agregar </button></div>
+                            
+                            
                         </div>
-                    </div>`
+            </div>`
 
     });
     contenedor.innerHTML = productosHtml

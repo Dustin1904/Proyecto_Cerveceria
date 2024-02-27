@@ -52,7 +52,7 @@
 /*||| CONTENEDOR "Contenido_Pagina |||"*/
 
 .Contenido_Pagina{
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 
@@ -70,7 +70,14 @@
 }
 .contenedor_general_prodcutos_1{
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: center;*/
+
+
+    max-width: 1200px; /* Ancho máximo del contenedor mayor */
+    margin: 0 auto; /* Centra el contenedor mayor horizontalmente */
+    padding: 0 20px; /* Ajusta el espacio a los lados del contenedor mayor */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los contenedores internos */
 }
 .contenedor_general_prodcutos_2{
     display: flex;
@@ -153,3 +160,101 @@ input[type=number] {
 /*|||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||FIN MENU DE OPCIONES||||||||||||||*/
 
+.contenedor_producto{
+    background-color: black;
+    border-radius: 35px;
+    width: 400px;
+    height: 599px;
+    position: relative;
+
+    width: calc((100% - 20px) / 3); /* Calcula el ancho de cada contenedor interno */
+    
+    margin-bottom: 20px; /* Espacio entre los contenedores internos */
+
+}
+
+.caracteristicas_producto{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 28px;
+    padding-right: 25px;
+    
+}
+
+.imagen_producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.borde{
+    width: 100%; 
+    height: 1px; 
+    background-color: gray; 
+    position: absolute;
+    top: 80%; 
+    left: 0;
+    transform: translateY(-50%); 
+}
+
+.imagen_producto img{
+    width: 300px;
+    height: 380px;
+    margin-top: 50px;
+}
+
+
+.butt_add{
+    padding-top: 9px;
+}
+.butt_add button{
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+
+}
+.contenedor_boton_precio{
+    justify-content: flex-start;
+}
+
+.boton_cantidad{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+.boton_cantidad button {
+    padding: 5px 10px; /* Ajusta el relleno */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    border-radius: 0;
+}
+
+
+.boton_cantidad input[type="number"] {
+    padding: 5px; /* Ajusta el relleno */
+    width: 40px; /* Ancho del campo de entrada */
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno */
+}
+
+.boton_cantidad button:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar sobre los botones */
+}
+
+
+.description{
+    padding-bottom: 5px;
+}
