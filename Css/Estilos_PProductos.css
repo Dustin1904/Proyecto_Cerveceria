@@ -70,15 +70,16 @@
 }
 .contenedor_general_prodcutos_1{
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
 
 
     max-width: 1400px; /* Ancho máximo del contenedor mayor */
     margin: 0 auto; /* Centra el contenedor mayor horizontalmente */
-    padding: 0 20px; /* Ajusta el espacio a los lados del contenedor mayor */
+   padding: 0 20px; /* Ajusta el espacio a los lados del contenedor mayor */
     display: flex; /* Utiliza el modelo de caja flexible */
     justify-content: space-between; /* Distribuye el espacio entre los contenedores internos */
 }
+
 .contenedor_general_prodcutos_2{
     display: flex;
     justify-content: space-evenly;

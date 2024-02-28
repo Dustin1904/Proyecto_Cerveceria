@@ -52,6 +52,7 @@
 /*||| CONTENEDOR "Contenido_Pagina |||"*/
 .Contenido_Pagina{
     background-color: white;
+    margin-top: 1em;
 }
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
@@ -143,6 +144,7 @@ input[type=number] {
     width: 300px;
     height: 380px;
     margin-top: 50px;
+    
 }
 
 
