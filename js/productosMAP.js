@@ -34,19 +34,19 @@ const productosDinamicos = () =>{
     Object.values(data).map((producto) => {
         productosHtml += `
         
-        <article class="contenedor_producto">
+        <article class="contenedor_producto" id="contenedorProducto_${producto.id}">
             
             <button class="botonProdcuto">
-                <img class="img" src="./Imagenes/Producto_Lata1.jpg" alt="">
+                <img class="img" src="${producto.img}" alt="">
             </button>
             <div class="detalles_producto">
                 
-                <h3 class="nombre_producto">Negra</h3>
-                <span class="precio_producto">$3.50</span>
+                <h3 class="nombre_producto">${producto.titulo}</h3>
+                <span class="precio_producto">${producto.price}</span>
                 <div class="botones">
-                    <button class="boton_cantidad boton_resta">-</button>
-                    <span class="numero_cantidad">1</span>
-                    <button class="boton_cantidad boton_suma">+</button>
+                    <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
+                    <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
+                    <button class="boton_cantidad boton_suma" id="aumentar_${producto.id}">+</button>
                 </div>
                 <button>Agregar</button>
                 
