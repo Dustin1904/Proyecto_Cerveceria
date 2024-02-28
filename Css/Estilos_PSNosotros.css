@@ -5,9 +5,12 @@
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
-.Pagina_Sobre_Nosotros{
+body{
     background-color: black;
 }
+/* .Pagina_Sobre_Nosotros{
+    background-color: black;
+} */
 .imagen_logo_pantallas{
     width: 125px;
     height: 100px;
@@ -49,9 +52,50 @@
 }
 /*|||=== FIN CONTENEDOR "Contenedor_Acciones_Menu===|||"*/
 
-/*||| CONTENEDOR "Contenido_Pagina |||"*/
-.Contenido_Pagina{
-    background-color: bisque;
+
+
+.tituloempresa{
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Dancing Script';
+}
+.titulokaluka{
+    color:#F0D513;
+}
+.titulobeer{
+    color:#FFA600;  
+    margin-left: 20px;
+}
+
+
+.imagenFundadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.imagenFundadores img{  
+    height: 45%;
+    width: 15%;
+    border-radius: 15px;
+    padding: 0 0 30px 0;
+}
+
+.contenedor_textoEmpresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+.anioHistoria{
+    color:#FFA600;
+    padding: 0 0 15px;
+}
+.textoEmpresa{
+    width: 27%;
 }
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
@@ -95,4 +139,3 @@
 
 /*|||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||FIN MENU DE OPCIONES||||||||||||||*/
-
