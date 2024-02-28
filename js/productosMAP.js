@@ -4,24 +4,24 @@
 const data = {
     1: {
         id: 1,
-        titulo:'Producto 1',
-        img:'../Imagenes/Producto.jpg',
-        price:'$2.50',
+        titulo:'Negra',
+        img:'../Imagenes/Producto_Lata1.jpg',
+        price:'$3.50',
         description:'Cerveza numero 1'
     },
     2: {
         id: 2,
-        titulo:'Producto 2',
-        img:'../Imagenes/Producto.jpg',
-        price:'$3.50',
+        titulo:'Maracuya',
+        img:'../Imagenes/Producto_Lata2.jpg',
+        price:'$4.00',
         description:'Cerveza numero 2'
 
     },
     3: {
         id: 3,
-        titulo:' Producto 3',
-        img:'../Imagenes/Producto.jpg',
-        price:'$5.00',
+        titulo:'Rubia',
+        img:'../Imagenes/Producto_Botella1.jpg',
+        price:'$3.50',
         description:'Cerveza numero 3'
 
     },
@@ -34,32 +34,25 @@ const productosDinamicos = () =>{
     Object.values(data).map((producto) => {
         productosHtml += `
         
-        <div class="contenedor_producto" id="contenedor_producto${producto.id}">
-                        <div class="imagen_producto">
-                            <img src="${producto.img}" alt="">
-                        </div>
-                        <div class="borde"></div>
-                        
-                        <div class="caracteristicas_producto">
-                            <div class="description">
-                                <p>${producto.description}
-                                </p>
-                                <div class="precio_producto">
-                                    <p> ${producto.price}</p>
-                                </div>   
-                            </div>
-                            <div class="contenedor_boton_precio">
-                                <div class="boton_cantidad">
-                                    <button class="disminuir" id="disminuir_${producto.id}"> - </button>
-                                    <input type="number" id="numeroProducto_${producto.id}" value="1" min="1" max="50">
-                                    <button class="aumentar" id ="aumentar_${producto.id}"> + </button>    
-                                </div>
-                            </div>
-                            <div class="butt_add"><button> Agregar </button></div>
-                            
-                            
-                        </div>
-            </div>`
+        <article class="contenedor_producto">
+            
+            <button class="botonProdcuto">
+                <img class="img" src="./Imagenes/Producto_Lata1.jpg" alt="">
+            </button>
+            <div class="detalles_producto">
+                
+                <h3 class="nombre_producto">Negra</h3>
+                <span class="precio_producto">$3.50</span>
+                <div class="botones">
+                    <button class="boton_cantidad boton_resta">-</button>
+                    <span class="numero_cantidad">1</span>
+                    <button class="boton_cantidad boton_suma">+</button>
+                </div>
+                <button>Agregar</button>
+                
+            </div>
+            
+        </article>`
 
     });
     contenedor.innerHTML = productosHtml
