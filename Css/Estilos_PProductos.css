@@ -414,10 +414,14 @@ input[type=number] {
       display: flex;
       justify-content: center;
       border-radius: 20px;
+      border: none;
+      background-color: transparent;
+    
   }
   .img{
       width: 100%;
       border-radius: 15px 15px 0 0;
+      border-radius: 20px;
   }
   .detalles_producto{
       display: flex;
@@ -480,6 +484,4 @@ input[type=number] {
       }
   }
   
-  
-
-  
+ 

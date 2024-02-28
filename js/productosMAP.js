@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+    productosDinamicos(); // Llama a la función para cargar los productos dinámicos
+
+    // Después de cargar los productos dinámicos, establece el evento de clic en los botones de producto
+    const botonesProductos = document.querySelectorAll('.botonProducto');
+    botonesProductos.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const productoId = boton.parentNode.id.split('_')[1]; // Obtén el ID del producto desde el ID del contenedor del producto
+            obtenerProducto(productoId); // Llama a la función para mostrar el detalle del producto
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); // Desplaza suavemente hasta el final de la página
+        });
+    });
+});
 
 
 
@@ -36,7 +49,7 @@ const productosDinamicos = () =>{
         
         <article class="contenedor_producto" id="contenedorProducto_${producto.id}">
             
-            <button class="botonProdcuto">
+            <button class="botonProducto">
                 <img class="img" src="${producto.img}" alt="">
             </button>
             <div class="detalles_producto">
@@ -57,6 +70,7 @@ const productosDinamicos = () =>{
     });
     contenedor.innerHTML = productosHtml
 
+    
 
     //Asignar eventos a los botones despues que se hayan agregado
     Object.values(data).map((producto) => {
@@ -90,11 +104,56 @@ function cambiarValor(idProducto, change){
 
 }
 
-document.addEventListener('DOMContentLoaded', productosDinamicos)
 
-/*document.addEventListener('DOMContentLoaded' ,()=>{
-    productosDinamicos();
-})*/
+
+
+const obtenerProducto = (productoId)=>{
+    const producto = data[productoId];
+    console.log(producto)
+    const contenedor = document.getElementById('contenedor_general_prodcutos_1')
+    const contenedorUnico = document.getElementById('contenedorUnico')
+    contenedor.classList.add('display-none')
+    let productoHtml = `
+
+    <article class="caja">
+    <div class="columna1">
+            <img id="imagen${producto.id}" class="imagenProducto" src="${producto.img}" alt="camisa">
+        </div>
+        <div class="columna">
+            <h1>${producto.titulo}</h1>
+            
+            <div class="datosProducto">
+                <span class="tachado">${producto.price}</span>
+                <span>${producto.price}
+                    <span class="oferta">Oferta</span> 
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                <div>
+                    <div class="botones">
+                        <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
+                        <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
+                        <button class="boton_cantidad boton_suma" id="aumentar_${producto.id}">+</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="regresar">Volver</button>
+                </div>
+            </div>
+        </div>
+    
+    </article>
+    `
+    contenedorUnico.innerHTML = productoHtml
+}
+
+
+
+
+
+
+//document.addEventListener('DOMContentLoaded', productosDinamicos)
+
+
 
 
 
