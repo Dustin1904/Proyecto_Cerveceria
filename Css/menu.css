@@ -1,6 +1,3 @@
-*{
-    margin: 0;
-}
 /*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
 .Pagina_Principal{
     background-color: black;
@@ -59,10 +56,7 @@
   }
   /*|||=== FIN CONTENEDOR "Contenedor_Acciones_Menu===|||"*/
   
-  /*||| CONTENEDOR "Contenido_Pagina |||"*/
-  .Contenido_Pagina{
-    background-color: bisque;
-  }
+
   
   
   /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
@@ -85,49 +79,3 @@
         justify-content: center;
     }
   }
-  
-
-/*||| CONTENEDOR "Contenido_Pagina |||"*/
-.Contenido_Pagina{
-    background-color: bisque;
-}
-
-/*||| MEDIA PARA EL MENU DE OPCIONES |||*/
-@media (max-width: 800px) {
-    .Pagina_Principal{
-        display: flex;
-        flex-direction: column;
-    }
-    .Contenedor_Acciones_Menu{
-        display: flex;
-        flex-direction: column;
-        margin-left: 50%;
-        transform: translate(-50%);
-    }
-    .navegacion{
-        flex-direction: column;
-    }
-    .navegacion li{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-
-/* IMAGEN DE FONDO*/
-
-.Contenido_Pagina{
-    display: flex;
-    justify-content: start;
-
-    background-color: black;
-}
-
-.Contenido_Pagina img{
-    display: flex;
-    width: 60rem;
-    height: 100%;
-    
-    
-}
-  
