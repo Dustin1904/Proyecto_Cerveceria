@@ -96,3 +96,322 @@
 /*|||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||FIN MENU DE OPCIONES||||||||||||||*/
 
+/*Desaparece las flechitos del input de tipo number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+    text-align: center;
+    background-color: yellow;
+}
+
+
+.caracteristicas_producto{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 28px;
+    padding-right: 25px;
+    
+}
+
+.imagen_producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.borde{
+    width: 100%; 
+    height: 1px; 
+    background-color: gray; 
+    position: absolute;
+    top: 80%; 
+    left: 0;
+    transform: translateY(-50%); 
+}
+
+.imagen_producto img{
+    width: 300px;
+    height: 380px;
+    margin-top: 50px;
+}
+
+
+.butt_add{
+    padding-top: 9px;
+}
+.butt_add button{
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+
+}
+.contenedor_boton_precio{
+    justify-content: flex-start;
+}
+
+.boton_cantidad{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+.boton_cantidad button {
+    padding: 5px 10px; /* Ajusta el relleno */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    border-radius: 0;
+}
+
+
+.boton_cantidad input[type="number"] {
+    padding: 5px; /* Ajusta el relleno */
+    width: 40px; /* Ancho del campo de entrada */
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno */
+}
+
+.boton_cantidad button:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar sobre los botones */
+}
+
+
+.description{
+    padding-bottom: 5px;
+}
+
+
+.producto {
+    width:30vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.producto h5{
+      margin-top: 20px;
+      font-size: 25px;
+  }
+  
+  .tituloProducto{
+      font-size: 2em;
+      padding: 5px;
+      color: rgb(152, 152, 23);
+  }
+  
+  .producto img{
+      width: 60%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 3px 4px  rgba(0,0,0,.4);
+  }
+  
+  .tachadoO{
+      text-decoration: line-through;
+  }
+  
+  .precio{
+      margin-left: 10px;
+      font-size: 2em;
+  }
+  
+  #contenedorUnico{
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .caja{
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 50px;
+      width: 65%;
+      border-radius: 20px;
+      box-shadow: 1px 2px 5px 5px  rgba(0,0,0,.4);
+  }
+  .columna1{
+      height: 500px;
+  }
+  
+  
+  .imagenProducto{
+      width:100%;
+      height: 100%;
+      transition: 1s;
+      display: flex;
+      
+      border-radius: 10px;
+  
+  }
+  .columna{
+      background-color: rgb(0, 0, 0);
+      max-width: 40%;
+      height: 100%;
+      color: white;
+      padding-left: 50px;
+      font-size: 20px;
+  }
+  
+  
+  
+  
+  .textoTamaño{
+      color: rgb(152, 152, 23);
+  }
+  
+  
+  .transicion{
+      border-radius: 20px;
+      height: 100%auto;
+      width: 100%;
+  }
+  
+  .oferta{    
+      margin-left: 10px;
+      border-radius: 20px;
+      background-color: #f08609;
+      color: white;
+      padding: 5px;
+      border-style: none;
+  } 
+  
+  .tamaños{
+      display: flex;
+      width: 15vw; 
+  }
+  .tamaños>*:focus{
+      background-color: rgb(0, 0, 0);
+      color: white;
+  }
+  .botonProducto{
+      border-style: none;
+      background-color: rgba(255, 255, 255,0.5);
+  
+  }
+  
+  .botonVolver{
+      border-radius: 5px;
+      font-size: 150px;
+      background-color: rgb(194, 47, 6);
+  }
+  
+  .regresar{
+      background-color: #64635f;
+      border-radius: 15px;
+      border: none;
+      width: 95%;
+      height: 25px;
+      color: white;
+      font-weight: 750;
+      margin-top: 18px;
+  }
+  
+  /*-----------------------------*/
+  .contenedor_general_prodcutos_1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 18px;
+  }
+  .contenedor_producto{
+      display: flex;
+      background-color: black;
+      flex-direction: column;
+      border-radius: 15px;
+      border: 2px black solid;
+      width: 400px;
+      height: 575px;
+      box-shadow: 1px 2px 5px 5px  rgba(0,0,0,.4);
+  }
+  .botonProducto{
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+  }
+  .img{
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+  }
+  .detalles_producto{
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      padding-top: 10px;
+  }
+  .nombre_producto, .precio_producto{
+  color: white;
+  }
+  .precio_producto{
+      margin-top: 3px;
+  }
+  .botones{
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffe907;
+      width: 70px;
+      height: 25px;
+      border-radius: 15px;
+      margin-top: 15px;
+  }
+  .boton_cantidad{
+      width: 100%;
+      background-color: #eab301 ;
+      border: none;
+      font-weight: 700;
+  }
+  .boton_suma{
+      border-radius: 0 15px 15px 0;
+  }
+  .boton_resta{
+      border-radius: 15px 0 0 15px;
+  }
+  .numero_cantidad{
+      color: black;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .detalles_producto>button{
+      background-color: #64635f;
+      border-radius: 15px;
+      border: none;
+      width: 340px;
+      height: 25px;
+      color: white;
+      font-weight: 750;
+      margin-top: 18px;
+  }
+  @media (max-width:930px) {
+      .caja{
+          flex-direction: column;
+          align-items: normal;
+      }
+      .columna{
+        
+          max-width: 100%;
+          width: 80%;
+      }
+  }
+  
+  
+
+  
