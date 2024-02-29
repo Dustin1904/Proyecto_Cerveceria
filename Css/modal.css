@@ -104,7 +104,7 @@
 }
 .formulario input{
     font-size: 100%;
-    border:;
+    
     padding: 0 10px;
     background-color:transparent;
     color: white;
@@ -119,7 +119,7 @@
     justify-content: center;
     margin-left: 12%;
     margin-top: 2%;
-    border: ;
+    
     font-size: 150%;
     border-radius: 20px;
 
