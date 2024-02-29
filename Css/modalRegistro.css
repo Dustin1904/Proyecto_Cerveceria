@@ -66,7 +66,7 @@
 }
 
 .formulario2{
-    width: 50%;
+    width: 45%;
 }
 
 /*.formulario{
@@ -85,9 +85,10 @@
 }*/
 
 .formulario2 h2{
-    margin-left: 15%;
+    margin-left: 17%;
     color: white;
     font-family: 'Kanit', sans-serif;
+    font-size: 250%;
 }
 .formulario2 input, .formulario2 label{
     max-width: 100%;
@@ -96,21 +97,31 @@
     color: white;
     margin-top: 1%;
     border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .formulario2 input{
     color: black;
     font-size: 100%;
     padding: 0 10px;
+    background-color: transparent;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 }
 .confirmar{
     max-width: 100%;
     width: 50%;
     margin-left: 25%;
-    margin-top: 2%;
-    border: none;
+    margin-top: 6%;
+    
     border-radius: 20px;
     font-size: 125%;
+    background-color: transparent;
+    color: white;
 }
 
 

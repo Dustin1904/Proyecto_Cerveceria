@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
             obtenerProducto(productoId); // Llama a la función para mostrar el detalle del producto
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); // Desplaza suavemente hasta el final de la página
         });
+        
     });
+
+    
+
+    
 });
 
 
@@ -17,25 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
 const data = {
     1: {
         id: 1,
-        titulo:'Negra',
+        titulo:'AMBER ALE',
         img:'../Imagenes/Producto_Lata1.jpg',
         price:'$3.50',
-        description:'Cerveza numero 1'
+        description:'Es una cerveza estilo americano de carácter prominente con leves notas frutales otorgadas por la levadura y maltas especiales sabor a caramelo, lo que la convierte en una bebida muy refrescante.'
     },
     2: {
         id: 2,
-        titulo:'Maracuya',
-        img:'../Imagenes/Producto_Lata2.jpg',
+        titulo:'MARACUYA',
+        img:'../Imagenes/Img reales/lataKaluka.jpg',
         price:'$4.00',
-        description:'Cerveza numero 2'
+        description:'Es un cerveza cítrica de color amarillo con tonos dorados y leves notas de maracuyá.'
 
     },
     3: {
         id: 3,
-        titulo:'Rubia',
+        titulo:'RUBIA',
         img:'../Imagenes/Producto_Botella1.jpg',
         price:'$3.50',
-        description:'Cerveza numero 3'
+        description:'Es una cerveza tipo Pale Ale de cuerpo liviano con un color dorado pálido altamente refrescante ideal para días calurosos.'
 
     },
     
@@ -123,29 +128,32 @@ const obtenerProducto = (productoId)=>{
             <h1>${producto.titulo}</h1>
             
             <div class="datosProducto">
-                <span class="tachado">${producto.price}</span>
+                
                 <span>${producto.price}
                     <span class="oferta">Oferta</span> 
                 </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                <p>${producto.description}</p>
+                
                 <div>
-                    <div class="botones">
-                        <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
-                        <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
-                        <button class="boton_cantidad boton_suma" id="aumentar_${producto.id}">+</button>
-                    </div>
-                </div>
-                <div>
-                    <button class="regresar">Volver</button>
+                    <button class="regresar" id="regresar">Haz tu pedido!</button>
+                    
                 </div>
             </div>
         </div>
     
     </article>
     `
-    contenedorUnico.innerHTML = productoHtml
+    contenedorUnico.innerHTML = productoHtml;
+
+    document.getElementById('regresar').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    
 }
 
+//Función para hacer scroll hacia arriba cuando se hace clic en el botón 'regresar'
+    
 
 
 

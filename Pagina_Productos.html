@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="Css/menu.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
         family=Kanit:wght@400;700&display=swap">
+        <link rel="stylesheet" href="/Css/modal.css">
+        <link rel="stylesheet" href="./Css/modalRegistro.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <div class="Pagina_Productos">
@@ -23,7 +26,7 @@
                         <li><a href="Pagina_Productos.html"> Productos </a></li>
                         <li><a href="Pagina_Ofertas.html"> Ofertas </a></li>
                         <li><a href="Pagina_Sobre_Nosotros.html"> Sobre Nosotros </a></li>
-                        <li><a href=""> Iniciar Sesion </a></li>
+                        <li><a href="" class="boton-login" id="boton-login"> Iniciar Sesion </a></li>
                     </nav>
                 </div>
             </div> <!-- FIN div "Contenedor_Acciones_Menu" --> 
@@ -46,5 +49,55 @@
 
               
         </div> <!-- FIN div "Pagina_Productos" -->
+
+        <section class="modal">
+            <div class="modal_container">
+                <div class="cerrar">
+                    <a href="" class="modal_close">
+                        <i class="fas fa-times cerrar_icono"></i>
+                    </a>
+                </div>
+                <form action="" class="formulario">
+                    <h2>LOGIN</h2>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <label for="">Contraseña</label>
+                    <input type="password">
+                    <p>¿No tienes una cuenta?
+                        <button class="registro">
+                            <span>Registrate</span>
+                        </button>
+                    </p>
+                    <button class="ingresar_login">Ingresar</button>
+                    
+                </form>
+
+            </div>
+        </section>
+
+
+        <section class="modal2">
+            <div class="modal_container2">
+                <div class="cerrar2">
+                <a href="#" class="modal_close2">
+                    <i class="fas fa-times cerrar_icono"></i>
+                </a>
+            </div>
+            <form class="formulario2" action="">
+                <h2> REGISTRO </h2>
+                <label for=""> Nombre </label>
+                <input type="text" />
+                <label for=""> Apellido </label>
+                <input type="text" />
+                <label for=""> Usuario </label>
+                <input type="text" />
+                <label for=""> Contraseña </label>
+                <input type="password" />
+                <label for=""> Confirmar Contraseña </label>
+                <input type="password" />
+                <button class="confirmar"> Confirmar </button>
+            </form>
+        </section>
+        <script src="./js/modalLOGIN.js"></script>
     </body>
 </html>

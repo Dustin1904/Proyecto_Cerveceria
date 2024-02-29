@@ -16,24 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {
 const data = {
     1: {
         id: 1,
-        titulo:'Negra',
-        img:'../Imagenes/Producto_Lata1.jpg',
-        price:'$3.50',
+        titulo:'COMBO 1',
+        img:'../Imagenes/Img reales/1.jpg',
+        priceTachado: "$7.00",
+        price:'$6.99',
         description:'Cerveza numero 1'
     },
     2: {
         id: 2,
-        titulo:'Maracuya',
-        img:'../Imagenes/Producto_Lata2.jpg',
-        price:'$4.00',
+        titulo:'COMBO 2',
+        img:'../Imagenes/Img reales/4.jpg',
+        priceTachado: "$9.00",
+        price:'$8.99',
         description:'Cerveza numero 2'
 
     },
     3: {
         id: 3,
-        titulo:'Rubia',
-        img:'../Imagenes/Producto_Botella1.jpg',
-        price:'$3.50',
+        titulo:'COMBO 3',
+        img:'../Imagenes/Img reales/7.png',
+        priceTachado: "$10.00",
+        price:'$9.99',
         description:'Cerveza numero 3'
 
     },
@@ -118,27 +121,25 @@ const obtenerProducto = (productoId)=>{
             <h1>${producto.titulo}</h1>
             
             <div class="datosProducto">
-                <span class="tachado">${producto.price}</span>
+                <span class="tachado" style="text-decoration: line-through"; text-decoration-thickness: 5px;">${producto.priceTachado}</span>
                 <span>${producto.price}
-                    <span class="oferta">Oferta</span> 
+                    <span class="oferta" >Oferta</span> 
                 </span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                
                 <div>
-                    <div class="botones">
-                        <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
-                        <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
-                        <button class="boton_cantidad boton_suma" id="aumentar_${producto.id}">+</button>
-                    </div>
-                </div>
-                <div>
-                    <button class="regresar">Volver</button>
+                    <button class="regresar" id="regresar">Haz tu pedido!</button>
                 </div>
             </div>
         </div>
     
     </article>
     `
-    contenedorUnico.innerHTML = productoHtml
+    contenedorUnico.innerHTML = productoHtml;
+
+    document.getElementById('regresar').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 }
 
 /*document.addEventListener('DOMContentLoaded', productosDinamicos)*/
