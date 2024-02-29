@@ -6,8 +6,11 @@
         <script src="js/principal.js"></script>
         <title> KalukA BEER Pagina_Principal </title>
         <link rel="stylesheet" type="text/css" href="Css/Estilos_PPrincipal.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
-        family=Kanit:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        
+        <link rel="stylesheet" href="/Css/modal.css">
     </head>
     <body>
         <div class="Pagina_Principal">
@@ -21,7 +24,7 @@
                         <li><a href="Pagina_Productos.html"> Productos </a></li>
                         <li><a href="Pagina_Ofertas.html"> Ofertas </a></li>
                         <li><a href="Pagina_Sobre_Nosotros.html"> Sobre Nosotros </a></li>
-                        <li><a href=""> Iniciar Sesion </a></li>
+                        <li><a href="" class="boton-login" id="boton-login"> Iniciar Sesion </a></li>
                     </nav>
                 </div>
             </div> <!-- FIN div "Contenedor_Acciones_Menu" --> 
@@ -36,11 +39,40 @@
                         <p>"Cervezas que desafían lo convencional... <br>Sabor auténtico, momentos inolvidables"</p>
                     </div>
                     <div class="bt_descubre">
-                        <a href="/Pagina_Sobre_Nosotros.html"><button class="descubre">DESCUBRE MÁS</button></a>
+                        <a href="/Pagina_Sobre_Nosotros.html"><button class="descubre">DESCUBRE MÁS<br>Únete!!</button></a>
                     </div>
                 </div>
                 
             </div>
         </div> <!-- FIN div "Pagina_Principal" -->
+
+
+        <section class="modal">
+            <div class="modal_container">
+                <div class="cerrar">
+                    <a href="#" class="modal_close">
+                        <i class="fas fa-times cerrar_icono"></i>
+                    </a>
+                </div>
+                <form action="" class="formulario">
+                    <h2>LOGIN</h2>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <label for="">Contraseña</label>
+                    <input type="password">
+                    <p>¿No tienes una cuenta?
+                        <button>
+                            <span>Registrate</span>
+                        </button>
+                    </p>
+                    <button class="ingresar_login">Ingresar</button>
+                    
+                </form>
+
+            </div>
+        </section>
+
+
+        <script src="./js/modalLOGIN.js"></script>
     </body>
 </html>
