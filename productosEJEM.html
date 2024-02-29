@@ -1,353 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html class="PaginaPrincipal">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/principal.js"></script>
+        <title> KalukA BEER Pagina_Principal </title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <style>
-        *{
-  margin: 0;
-}
-body{
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-/*|||||||||||| PAGINA VALIDACION ||||||||||||| */
-/*||||||||||||||||||||||||||||||||||||||||||||*/
-.Validacion_Edad{
-  background-color: black;
-  justify-content: center;
-  display: flex;
-  display: block;
-}
-/* ||| CONTENEDOR Nombre_Empresa |||*/
-.Nombre_Empresa{
-  text-align: center;
-  padding: 30px;
-}
-.KalukA{
-  color: #F0D513;
-  letter-spacing: 15px;
-  font-size: 80px;
-  font-weight: 900;
-  font-family: 'Kanit',sans-serif;
-}
-.BEER{
-  color: #FFA600;
-  font-size: 60px;
-  letter-spacing: 30px;
-  position: relative;
-  margin-left: 20px;
-  font-family: 'Kanit',sans-serif;
-}
-/* |||=== FIN CONTENEDOR Nombre_Empresa ===|||*/
-
-/* ||| CONTENEDOR Contenedor_Acciones |||*/
-.Contenedor_Acciones{
-  background-color: black;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: -5px;
-}
-
-.fecha_nacimiento input, .fecha_nacimiento p{
-  margin: 20px;
-}
-.fecha_nacimiento p{
-  color: aliceblue;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(252, 91, 4, 0.5)
-}
-.fecha_nacimiento input{
-  border-radius: 15px;
-  font-size: 20px;
-  width: 200px;
-  height: 100px;
-  margin: 0 50px;
-  background-color: black;
-  border-color: aliceblue;
-  border-width: 5px;
-  color: aliceblue;
-  transition: transform 0.5s ease;
-  text-align: center;
-}
-.fecha_nacimiento input:hover{
-  transform: scale(1.1);
-}
-.fecha_nacimiento .ingresar{
-  border-radius: 30px;
-  width: 200px;
-  height: 75px;
-  margin: 0 50px;
-  background-color: black;
-  border-color: aliceblue;
-  border-width: 5px;
-  color: aliceblue;
-  transition: transform 0.5s ease;
-}
-.fecha_nacimiento .ingresar:hover{
-  transform: scale(1.1);
-}
-.fecha_nacimiento input::placeholder{
-  color: aliceblue;
-  text-align: center;
-}
-/* |||=== FIN CONTENEDOR Contenedor_Acciones ===|||*/
-
-/* ||| CONTENEDOR Pie_Pagina_Validacion |||*/
-.Pie_Pagina_Validacion{
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  
-}
-.imagen1_logo{
-  width: 150px;
-  height: 150px;
-}
-.imagen2_tiktok,.imagen3_instagram{
-  width: 35px;
-  height: 35px;
-  padding: 50px 5px;
-}
-.imagen1_pie_pagina, .texto1_pie_pagina,
-.texto2_pie_pagina,.imagen2_tiktok_pie_pagina,
-.imagen3_instagram_pie_pagina{
-  margin: 20px;
-  transition: transform 0.5s ease;
-}
-.imagen1_pie_pagina:hover, .texto1_pie_pagina:hover,
-.texto2_pie_pagina:hover,.imagen2_tiktok_pie_pagina:hover,
-.imagen3_instagram_pie_pagina:hover{
-  transform: scale(1.1);
-}
-
-.texto_advertencia, .texto_menores_edad{
-  text-align: center;
-  color: aliceblue;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(252, 91, 4, 0.5)
-}
-.texto_advertencia{
-  padding: 50px 50px;
-}
-.texto_menores_edad{
-  padding: 50px 10px;
-}
-/*|||=== FINAL CONTENEDOR Pie_Pagina_Validacion ===|||*/
-
-/*||| MEDIA PARA AJUSTAR EL TAMAÑO DE LA PAGINA |||*/
-@media (max-width:600px) {
-  .Validacion_Edad{
-      display: flex;
-      flex-direction: column;
-  }
-  .Contenedor_Acciones{
-      display: flex;
-      flex-direction: column;
-  }
-  .Pie_Pagina_Validacion{
-      display: flex;
-      flex-direction: column;
-  }
-  .imagen1_pie_pagina,.imagen2_tiktok_pie_pagina,
-  .imagen3_instagram_pie_pagina{
-      display: flex;
-      justify-content: center;
-  }
-}
-/*|||=== FINAL DE LA MEDIA ===|||*/
-/*body{
-  background-image: url(../Imagenes/ZetC7m.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-}*/
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-/*|||||||||||||||||| FIN PAGINA VALIDACION ||||||||||||*/
+        <script defer src="./js/menu.js"></script>
+        <link rel="stylesheet" type="text/css" href="Css/menu.css">
 
 
-/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-/*                       Pagina Principal                                                     */
+        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
 
-*{
-  margin: 0;
-}
-/*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
-.Pagina_Principal{
-  background-color: black;
-
-}
-.Contenedor_Acciones_Menu{
-  display: flex;
-  justify-content: space-between;
-}
-.Logo_Kaluka{
-  background-color: black;
-  margin-left: 50px;
-}
-.Logo_Kaluka img{
-  width: 125px;
-  height: 100px;
-  border-radius: 50%;
-  transition: transform 0.5s ease;
-}
-.Logo_Kaluka img:hover{
-  transform: scale(1.3);
-}
-
-.navegacion{
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin-top: 45px;
-  margin-right: 30px;
-}
-.navegacion a{
-  text-decoration: none;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 20px;
-  margin-right: 50px;
-  letter-spacing: -1px;
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  transition: transform 0.5s ease;
-} 
-.navegacion a:hover{
-  transform: scale(2.5);
-}
-
-.navegacion li:last-child a{
-  margin-right: 0;
-}
-.navegacion li{
-  text-align: center;
-}
-.imagen_fondo_Pprincipal{
-  width: 100%;
-  height: 100vh;
-}
-/*|||=== FIN CONTENEDOR "Contenedor_Acciones_Menu===|||"*/
-
-/*||| CONTENEDOR "Contenido_Pagina |||"*/
-.Contenido_Pagina{
-  background-color: bisque;
-}
-
-
-/*||| MEDIA PARA EL MENU DE OPCIONES |||*/
-@media (max-width: 800px) {
-  .Pagina_Principal{
-      display: flex;
-      flex-direction: column;
-  }
-  .Contenedor_Acciones_Menu{
-      display: flex;
-      flex-direction: column;
-      margin-left: 50%;
-      transform: translate(-50%);
-  }
-  .navegacion{
-      flex-direction: column;
-  }
-  .navegacion li{
-      display: flex;
-      justify-content: center;
-  }
-}
-
-}
-    </style>
-
-    <div class="contenedor-general">
+        
+        <link rel="stylesheet" href="/Css/modal.css">
+        <link rel="stylesheet" href="./Css/modalRegistro.css">
+    </head>
+    <body>
         <div class="Pagina_Principal">
             <div class="Contenedor_Acciones_Menu">
-                <div class="Logo_Kaluka">
-                    <img class="imagen_logo_pantallas" src="../Imagenes/Kaluka_Beer_3.jpg" />
-                </div>
-                <div class="contenedor_opciones">
-                    <nav class="navegacion text-9xl">
-                        <ul>
-                            <li class="text-9xl"><a href="/pagina_principal">Inicio</a></li>
-                            <li><a href="/pagina_producto">Productos</a></li>
-                            <li><a href="/ofertas">Ofertas</a></li>
-                            <li><a href="/pagina_snosotros">Sobre Nosotros</a></li>
-                            <li><a href="">Iniciar Sesion</a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+              <nav class="navegacion">
+                <img class="imagen_logo_pantallas" src="Imagenes/Kaluka_Beer_3.jpg">
+                <button class="nav-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu nav-menu_visible">
+                  <li class="nav-menu-link"><a href="Pagina_Principal.html" class=" nav-menu-link_active"> Inicio </a></li>
+                    <li class="nav-menu-link"><a href="Pagina_Productos.html" class=" nav-menu-link_active"> Productos </a></li>
+                    <li class="nav-menu-link"><a href="Pagina_Ofertas.html" class=" nav-menu-link_active"> Ofertas </a></li>
+                    <li class="nav-menu-link"><a href="Pagina_Sobre_Nosotros.html" class=" nav-menu-link_active"> Sobre Nosotros </a></li>
+                    <li class="nav-menu-link"><a href="" class="boton-login  nav-menu-link_active" id="boton-login"> Iniciar Sesion </a></li>
+
+                </ul>
+
+              </nav>
             </div>
         </div>
-    </div>
-    
-    
 
-    <div class="contenedorProductos">
+                  
 
-        <article class="contenedor_producto">
+
+
+
+                    
+              
             
-            <button class="botonProdcuto">
-                <img class="img" src="./Imagenes/Producto_Lata1.jpg" alt="">
-            </button>
-            <div class="detalles_producto">
-                
-                <h3 class="nombre_producto">Negra</h3>
-                <span class="precio_producto">$3.50</span>
-                <div class="botones">
-                    <button class="boton_cantidad boton_resta">-</button>
-                    <span class="numero_cantidad">1</span>
-                    <button class="boton_cantidad boton_suma">+</button>
+
+
+        <section class="modal">
+            <div class="modal_container">
+                <div class="cerrar">
+                    <a href="" class="modal_close">
+                        <i class="fas fa-times cerrar_icono"></i>
+                    </a>
                 </div>
-                <button>Agregar</button>
-                
-            </div>
-            
-        </article>
-    </div>
-
-
-    <div id="contenedorUnico">
-        <article class="caja">
-            <div class="columna1">
-                <img class="imagenProducto" id="imagen1" src="./Imagenes/Producto_Lata1.jpg" alt="">
-            </div>
-            <div class="columna">
-                <h2>Negra</h2>
-                <div class="datosProducto">
-                    <span class="tachado">$3.50</span>
-                    <span>
-                        $2.50
-                        <span class="oferta">Oferta</span>
-                    </span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dicta optio, dolorum mollitia quibusdam corrupti, accusamus autem temporibus cum, vel eum ratione alias porro fuga at amet tempora odio beatae.
+                <form action="" class="formulario">
+                    <h2>LOGIN</h2>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <label for="">Contraseña</label>
+                    <input type="password">
+                    <p>¿No tienes una cuenta?
+                        <button class="registro">
+                            <span>Registrate</span>
+                        </button>
                     </p>
-                    <div>
-                        <div class="botones">
-                            <button class="boton_cantidad boton_resta">-</button>
-                            <span class="numero_cantidad">1</span>
-                            <button class="boton_cantidad boton_suma">+</button>
-                        </div>
-                        <div>
-                            <button class="regresar">Volver</button>
-                        </div>
+                    <button class="ingresar_login">Ingresar</button>
+                    
+                </form>
 
-                    </div>
-                </div>
             </div>
+        </section>
 
-        </article>
 
-    </div>
-</body>
+        <section class="modal2">
+            <div class="modal_container2">
+                <div class="cerrar2">
+                <a href="#" class="modal_close2">
+                    <i class="fas fa-times cerrar_icono"></i>
+                </a>
+            </div>
+            <form class="formulario2" action="">
+                <h2> REGISTRO </h2>
+                <label for=""> Nombre </label>
+                <input type="text" />
+                <label for=""> Apellido </label>
+                <input type="text" />
+                <label for=""> Usuario </label>
+                <input type="text" />
+                <label for=""> Contraseña </label>
+                <input type="password" />
+                <label for=""> Confirmar Contraseña </label>
+                <input type="password" />
+                <button class="confirmar"> Confirmar </button>
+            </form>
+        </section>
+
+
+
+
+        <script src="./js/modalLOGIN.js"></script>
+    </body>
 </html>

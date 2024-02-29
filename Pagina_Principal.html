@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+        <script defer src="./js/menu.js"></script>
+        <link rel="stylesheet" type="text/css" href="Css/menu.css">
+
+
+        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
         
         <link rel="stylesheet" href="/Css/modal.css">
         <link rel="stylesheet" href="./Css/modalRegistro.css">
@@ -16,18 +22,21 @@
     <body>
         <div class="Pagina_Principal">
             <div class="Contenedor_Acciones_Menu">
-                <div class="Logo_Kaluka">
+                <nav class="navegacion">
                     <img class="imagen_logo_pantallas" src="Imagenes/Kaluka_Beer_3.jpg">
-                </div>
-                <div class="contenedor_opciones">
-                    <nav class="navegacion">
-                        <li><a href="Pagina_Principal.html"> Inicio </a></li>
-                        <li><a href="Pagina_Productos.html"> Productos </a></li>
-                        <li><a href="Pagina_Ofertas.html"> Ofertas </a></li>
-                        <li><a href="Pagina_Sobre_Nosotros.html"> Sobre Nosotros </a></li>
-                        <li><a href="" class="boton-login" id="boton-login"> Iniciar Sesion </a></li>
-                    </nav>
-                </div>
+                    <button class="nav-toggle">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu nav-menu_visible">
+                      <li class="nav-menu-link"><a href="Pagina_Principal.html" class=" nav-menu-link_active"> Inicio </a></li>
+                        <li class="nav-menu-link"><a href="Pagina_Productos.html" class=" nav-menu-link_active"> Productos </a></li>
+                        <li class="nav-menu-link"><a href="Pagina_Ofertas.html" class=" nav-menu-link_active"> Ofertas </a></li>
+                        <li class="nav-menu-link"><a href="Pagina_Sobre_Nosotros.html" class=" nav-menu-link_active"> Sobre Nosotros </a></li>
+                        <li class="nav-menu-link"><a href="" class="boton-login  nav-menu-link_active" id="boton-login"> Iniciar Sesion </a></li>
+    
+                    </ul>
+    
+                  </nav>
             </div> <!-- FIN div "Contenedor_Acciones_Menu" --> 
             <div class="contenedor">
 

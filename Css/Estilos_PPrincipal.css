@@ -6,7 +6,7 @@
     background-color: black;
   
   }
-  .Contenedor_Acciones_Menu{
+  /*.Contenedor_Acciones_Menu{
     display: flex;
     justify-content: space-between;
   }
@@ -66,7 +66,7 @@
   
   
   /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
-  @media (max-width: 800px) {
+  /*@media (max-width: 800px) {
     .Pagina_Principal{
         display: flex;
         flex-direction: column;
@@ -93,7 +93,7 @@
 }
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
     .Pagina_Principal{
         display: flex;
         flex-direction: column;

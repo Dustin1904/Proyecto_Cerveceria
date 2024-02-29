@@ -5,7 +5,7 @@
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
-.Pagina_Ofertas{
+/*.Pagina_Ofertas{
     background-color: black;
 }
 .imagen_logo_pantallas{
@@ -33,7 +33,7 @@
     margin-right: 20px;
     letter-spacing: 5px;
     /*text-shadow: 3px 3px 0px rgba(255, 140, 0, 0.5);*/
-    transition: transform 0.5s ease;
+    /*transition: transform 0.5s ease;
 } 
 .navegacion a:hover{
     transform: scale(2.5);
@@ -52,11 +52,11 @@
 /*||| CONTENEDOR "Contenido_Pagina |||"*/
 .Contenido_Pagina{
     background-color: white;
-    margin-top: 1em;
+    
 }
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
     .Pagina_Principal{
         display: flex;
         flex-direction: column;
