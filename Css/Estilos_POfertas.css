@@ -53,6 +53,7 @@
 .Contenido_Pagina{
     background-color: white;
     
+    
 }
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
@@ -358,6 +359,7 @@ input[type=number] {
       flex-direction: column;
       padding-left: 30px;
       padding-top: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .nombre_producto, .precio_producto{
   color: white;

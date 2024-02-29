@@ -20,7 +20,7 @@ const data = {
         img:'../Imagenes/Img reales/1.jpg',
         priceTachado: "$7.00",
         price:'$6.99',
-        description:'Cerveza numero 1'
+        description:'Combo Imperdible. <br>Hamburguesa + Cerveza Artesanal. <br>-200g de res<br>-Salsa tocineta BBQ<br>-Queso americano<br>-Papas fritas estilo chips.'
     },
     2: {
         id: 2,
@@ -28,7 +28,7 @@ const data = {
         img:'../Imagenes/Img reales/4.jpg',
         priceTachado: "$9.00",
         price:'$8.99',
-        description:'Cerveza numero 2'
+        description:'Combo Espectacular.<br>Alitas BBQ + Cerveza Artesanal. <br>-Alitas x (6,12,18)<br>-Salsa BBQ<br>-Salsa Mango<br>-Slasa miel y mostaza <br>-Papas fritas estilo francés.'
 
     },
     3: {
@@ -37,7 +37,7 @@ const data = {
         img:'../Imagenes/Img reales/7.png',
         priceTachado: "$10.00",
         price:'$9.99',
-        description:'Cerveza numero 3'
+        description:'Combo Glotón. <br>Bife de chorizo + Cerveza Artesanal. <br>-300g de res<br>-Papas fritas<br>-Vegetales.'
 
     },
     
@@ -56,12 +56,12 @@ const productosDinamicos = () =>{
             </button>
             <div class="detalles_producto">
                 
-                <h3 class="nombre_producto">${producto.titulo}</h3>
-                <span class="precio_producto">${producto.price}</span>
+                <h3 class="nombre_producto" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.titulo}</h3>
+                <span class="precio_producto" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.price}</span>
                 <div class="botones">
-                    <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
-                    <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
-                    <button class="boton_cantidad boton_suma" id="aumentar_${producto.id}">+</button>
+                    <button class="boton_cantidad boton_resta" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="disminuir_${producto.id}">-</button>
+                    <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id} style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" value="1" min ="1" max="50">
+                    <button class="boton_cantidad boton_suma" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="aumentar_${producto.id}">+</button>
                 </div>
                 <button>Agregar</button>
                 
@@ -118,17 +118,17 @@ const obtenerProducto = (productoId)=>{
             <img id="imagen${producto.id}" class="imagenProducto" src="${producto.img}" alt="camisa">
         </div>
         <div class="columna">
-            <h1>${producto.titulo}</h1>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.titulo}</h1>
             
             <div class="datosProducto">
-                <span class="tachado" style="text-decoration: line-through"; text-decoration-thickness: 5px;">${producto.priceTachado}</span>
-                <span>${producto.price}
+                <span class="tachado" style="text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.priceTachado}</span>
+                <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.price}
                     <span class="oferta" >Oferta</span> 
                 </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.description}</p>
                 
                 <div>
-                    <button class="regresar" id="regresar">Haz tu pedido!</button>
+                    <button class="regresar" id="regresar" >Haz tu pedido!</button>
                 </div>
             </div>
         </div>

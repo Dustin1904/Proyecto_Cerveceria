@@ -59,8 +59,8 @@ const productosDinamicos = () =>{
             </button>
             <div class="detalles_producto">
                 
-                <h3 class="nombre_producto">${producto.titulo}</h3>
-                <span class="precio_producto">${producto.price}</span>
+                <h3 class="nombre_producto" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.titulo}</h3>
+                <span class="precio_producto" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.price}</span>
                 <div class="botones">
                     <button class="boton_cantidad boton_resta" id="disminuir_${producto.id}">-</button>
                     <input type="number" class="numero_cantidad" id="numeroProducto_${producto.id}" value="1" min ="1" max="50">
@@ -125,17 +125,17 @@ const obtenerProducto = (productoId)=>{
             <img id="imagen${producto.id}" class="imagenProducto" src="${producto.img}" alt="camisa">
         </div>
         <div class="columna">
-            <h1>${producto.titulo}</h1>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.titulo}</h1>
             
             <div class="datosProducto">
                 
-                <span>${producto.price}
-                    <span class="oferta">Oferta</span> 
+                <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.price}
+                    <span class="oferta" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Oferta</span> 
                 </span>
-                <p>${producto.description}</p>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">${producto.description}</p>
                 
                 <div>
-                    <button class="regresar" id="regresar">Haz tu pedido!</button>
+                    <button class="regresar" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="regresar">Haz tu pedido!</button>
                     
                 </div>
             </div>
